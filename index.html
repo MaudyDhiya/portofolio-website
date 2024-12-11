@@ -95,6 +95,7 @@
                 decision-making. Proficient in tools and technologies including Python, TensorFlow, Tableau, MySQL, and SPSS, also Coursera certified. Currently enhancing expertise in Data Science and Machine Learning through the Purwadhika
                 Bootcamp to further develop advanced analytical and machine learning capabilities.
               </p>
+              <a href="https://drive.google.com/file/d/16r6FYNR9XgjGKVvsUqzwzeNaSxCES__j/view?usp=sharing" class="btn-download" target="_blank"> Download Resume</a>
             </div>
             <!-- Foto di sebelah kanan -->
             <div class="image-section">
@@ -106,63 +107,217 @@
     </section>
     <!-- Jumbotron End -->
 
-    <!-- About -->
-    <section class="section-height" id="about">
-      <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2>About</h2>
-          </div>
-        </div>
-        <div class="row justify-content-center fs-5">
-          <div class="col">
-            <p>
-              I am a fresh graduate Mathematics student from the Universitas Negeri Malang. I am a learner who is able to work under pressure, manage task priorities well, demonstrate discipline and responsibility, and work effectively both
-              in a team and independently. I am interested in learning the beauty of the combination of Mathematics, Statistics, and Programming skills, which lead me to dive deeply into Data Analytics, Data Science, and Project Management.
-              I aim to become a skilled data analyst in the era of digitalization and big data, with a massive desire to improve myself by exploring more experiences and knowledge.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- About End -->
-
     <!-- Projects -->
     <section id="projects" class="section-height">
       <div class="container">
         <!-- Section Title -->
         <div class="row text-center mb-4">
           <div class="col">
-            <h2>Projects</h2>
+            <h2>My Projects</h2>
           </div>
         </div>
         <!-- Cards -->
         <div class="row justify-content-center">
           <!-- Card 1 -->
           <div class="col-md-4">
-            <div class="card">
+            <div class="card" onclick="openModal('modal1')">
               <img src="img/Website Transportation Problem.png" class="card-img-top" alt="Project 1" />
               <div class="card-body">
-                <p class="card-text">Description for Project 1</p>
+                <h4 class="card-text text-center">Web Development Project</h4>
+                <p class="card-text text-center">Transportation Problem Website-Based</p>
               </div>
             </div>
           </div>
           <!-- Card 2 -->
           <div class="col-md-4">
-            <div class="card">
-              <img src="img/Website Transportation Problem.png" class="card-img-top" alt="Project 2" />
+            <div class="card" onclick="openModal('modal2')">
+              <img src="img/Predicting Titanic Survivors - Portofolio Maudy.jpg" class="card-img-top" alt="Project 2" />
               <div class="card-body">
-                <p class="card-text">Description for Project 2</p>
+                <h4 class="card-text text-center">Data Science Project</h4>
+                <p class="card-text text-center">Predicting Titanic Survivors</p>
               </div>
             </div>
           </div>
+        </div>
+      </div>
+
+      <!-- Modal 1 -->
+      <div id="modal1" class="custom-modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal1')">&times;</span>
+          <h3>Transportation Problem Website-Based</h3>
+          <p>
+            Implemented a transportation method using Python to generate initial solution for transportation problems. This project helped 85% of users find optimal transportation costs with faster and accurate calculations integrated into
+            a web-based platform.
+          </p>
+          <p>Select your preferred view:</p>
+          <a href="https://github.com/MaudyDhiya/Transportation_Problem.git" target="_blank" class="modal-link">GitHub</a>
+          <a href="https://docs.google.com/presentation/d/1Fa6rH6vU3waYEi6k-r2KHh9nzplvfhkO/edit?usp=sharing&ouid=103744986318032099432&rtpof=true&sd=true" target="_blank" class="modal-link">PPT Slide</a>
+        </div>
+      </div>
+
+      <!-- Modal 2 -->
+      <div id="modal2" class="custom-modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal2')">&times;</span>
+          <h3>Predicting Titanic Survivors</h3>
+          <p>
+            Developed a machine learning model to predict Titanic survival based on historical data. The project included data preprocessing, exploratory analysis, feature engineering, and the implementation of four different models: Random
+            Forest, KNN, SVM, and Gradient Boosting.
+          </p>
+          <p>Select your preferred view:</p>
+          <a href="https://github.com/MaudyDhiya/Predicting-Titanic-Survivors.git" target="_blank" class="modal-link">GitHub</a>
+          <a href="https://public.tableau.com/views/PredictingTitanicSurvivors/PassangerSurvivalRate?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank" class="modal-link">Tableau</a>
+          <a href="https://docs.google.com/presentation/d/1Y1Mxvb4zDlH47p1_GQnKhCvIm8B1KtI8/edit?usp=sharing&ouid=103744986318032099432&rtpof=true&sd=true" target="_blank" class="modal-link">PPT Slide</a>
         </div>
       </div>
     </section>
     <!-- Projects End -->
 
     <!-- Articles -->
+    <section id="articles" class="section-height">
+      <div class="container">
+        <!-- Section Title -->
+        <div class="row text-center mb-4">
+          <div class="col">
+            <h2>Articles</h2>
+          </div>
+        </div>
+        <!-- Cards -->
+        <div class="row justify-content-center">
+          <!-- Card 1 -->
+          <div class="col-md-4">
+            <div class="card" onclick="openModal('modal1')">
+              <img src="img/Website Transportation Problem.png" class="card-img-top" alt="Project 1" />
+              <div class="card-body">
+                <h4 class="card-text text-center">Title Article 1</h4>
+                <p class="card-text text-center">Desc Article 1</p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="col-md-4">
+            <div class="card" onclick="openModal('modal2')">
+              <img src="img/Predicting Titanic Survivors - Portofolio Maudy.jpg" class="card-img-top" alt="Project 2" />
+              <div class="card-body">
+                <h4 class="card-text text-center">Title Article 2</h4>
+                <p class="card-text text-center">Desc Article 2</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal 1 -->
+      <div id="modal1" class="custom-modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal1')">&times;</span>
+          <h3>Transportation Problem Website-Based</h3>
+          <p>
+            Implemented a transportation method using Python to generate initial solution for transportation problems. This project helped 85% of users find optimal transportation costs with faster and accurate calculations integrated into
+            a web-based platform.
+          </p>
+          <p>Select your preferred view:</p>
+          <a href="https://github.com/MaudyDhiya/Transportation_Problem.git" target="_blank" class="modal-link">GitHub</a>
+          <a href="https://docs.google.com/presentation/d/1Fa6rH6vU3waYEi6k-r2KHh9nzplvfhkO/edit?usp=sharing&ouid=103744986318032099432&rtpof=true&sd=true" target="_blank" class="modal-link">PPT Slide</a>
+        </div>
+      </div>
+
+      <!-- Modal 2 -->
+      <div id="modal2" class="custom-modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal2')">&times;</span>
+          <h3>Predicting Titanic Survivors</h3>
+          <p>
+            Developed a machine learning model to predict Titanic survival based on historical data. The project included data preprocessing, exploratory analysis, feature engineering, and the implementation of four different models: Random
+            Forest, KNN, SVM, and Gradient Boosting.
+          </p>
+          <p>Select your preferred view:</p>
+          <a href="https://github.com/MaudyDhiya/Predicting-Titanic-Survivors.git" target="_blank" class="modal-link">GitHub</a>
+          <a href="https://public.tableau.com/views/PredictingTitanicSurvivors/PassangerSurvivalRate?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank" class="modal-link">Tableau</a>
+          <a href="https://docs.google.com/presentation/d/1Y1Mxvb4zDlH47p1_GQnKhCvIm8B1KtI8/edit?usp=sharing&ouid=103744986318032099432&rtpof=true&sd=true" target="_blank" class="modal-link">PPT Slide</a>
+        </div>
+      </div>
+    </section>
     <!-- Articles End -->
+
+    <!-- Resume -->
+    <section id="resume" class="section-height">
+      <div class="container">
+        <!-- Section Title -->
+        <div class="row text-center mb-4">
+          <div class="col">
+            <h2>Resume</h2>
+          </div>
+        </div>
+      <div class="resume-grid">
+        <!-- Education & Course Section -->
+        <div class="education">
+          <h2>Education & Courses</h2>
+          <div class="education-item">
+            <div class="line">
+              <div></div>
+            </div>
+            <div class="education-content">
+              <h3>Purwadhika Digital Technology School</h3>
+              <p class="role">Data Science & Machine Learning</p>
+              <p class="description">
+                Partcipated in Data Science training, focusing on Python programming, data analysis (MySQL, Pandas, Numpy), data visualization (Seaborn, Matplotlib, Tableau), and machine learning techniques, including supervised and
+                unsupervised learning, feature engineering, time series forecasting, and model deployment.
+              </p>
+              <p class="skills">Skills: Python, Data Analysis (SQL, Pandas, Numpy), Data Visualization (Seaborn, Matplotlib, Tableau), Machine Learning.</p>
+            </div>
+          </div>
+
+          <div class="education-item">
+            <div class="line">
+              <div></div>
+            </div>
+            <div class="education-content">
+              <h3>Universitas Negeri Malang</h3>
+              <p class="role">Bachelor's Degree</p>
+              <p class="description">Thesis: "Comparison of Supply Selection Method (SSM) and Karagul-Sahin Approximation Method (KSAM) on finding Initial Basic Feasible SOlution (IBFS) for Website-Based Transportation Problems.</p>
+              <p class="skills">GPA: 3.66/4.00</p>
+            </div>
+          </div>
+
+          <div class="education-item">
+            <div class="line">
+              <div></div>
+            </div>
+            <div class="education-content">
+              <h3>Bangkit Academy by Google, GoTo, Traveloka</h3>
+              <p class="role">Machine Learning Cohort</p>
+              <p class="description">
+                Completed an internsive program covering IT fundamentals, Python Programming, Machine Learning, and Deep Learning, which solidified my technical skills in data analysis and modeling. Developed a Capstone Project: "Vistique",
+                a smart virtual batik recognizer application using augmented reality to identify motifs, provide cultural insights, and enhance tourism.
+              </p>
+              <p class="skills">Machine Learning, DeepLearning, Math for Machine Learning</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience Section -->
+        <div class="experience">
+          <h2>Experience</h2>
+          <div class="experience-item">
+            <h3>Company Name</h3>
+            <p class="role">Software Engineer</p>
+            <p class="description">Developed scalable web applications, improved performance, and led a team of junior developers in various projects.</p>
+            <p class="years">2021 - Present</p>
+          </div>
+
+          <div class="experience-item">
+            <h3>Startup Name</h3>
+            <p class="role">Frontend Developer</p>
+            <p class="description">Collaborated with UI/UX designers to create responsive and user-friendly interfaces using React and Tailwind CSS.</p>
+            <p class="years">2019 - 2021</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume End -->
 
     <!-- Contact -->
     <section id="contact">
@@ -269,6 +424,45 @@
           });
         });
       })();
+
+      function openModal(modalId) {
+        document.getElementById(modalId).style.display = "block";
+      }
+
+      function closeModal(modalId) {
+        document.getElementById(modalId).style.display = "none";
+      }
+
+      // Close modal when clicking outside the modal content
+      window.onclick = function (event) {
+        const modals = document.querySelectorAll(".custom-modal");
+        modals.forEach((modal) => {
+          if (event.target === modal) {
+            modal.style.display = "none";
+          }
+        });
+      };
+    </script>
+
+    // Open Modal
+    <script>
+      function openModal(modalId) {
+        document.getElementById(modalId).style.display = "block";
+      }
+
+      function closeModal(modalId) {
+        document.getElementById(modalId).style.display = "none";
+      }
+
+      // Close modal when clicking outside the modal content
+      window.onclick = function (event) {
+        const modals = document.querySelectorAll(".custom-modal");
+        modals.forEach((modal) => {
+          if (event.target === modal) {
+            modal.style.display = "none";
+          }
+        });
+      };
     </script>
   </body>
 </html>

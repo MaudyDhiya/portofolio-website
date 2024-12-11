@@ -131,47 +131,51 @@ footer a {
 
 /* Jumbotron Styles */
 .jumbotron .row {
-  align-items: center; /* Pastikan elemen sejajar secara vertikal */
+  align-items: center;
   height: 100%;
 }
 
 .jumbotron .text-section {
-  flex: 1; /* Elemen teks mengambil ruang tersisa */
-  max-width: 60%; /* Maksimal lebar teks */
-  text-align: left; /* Teks rata kiri */
+  flex: 1;
+  max-width: 60%;
+  text-align: left;
 }
 
 .jumbotron .image-section {
-  flex-shrink: 0; /* Gambar tidak menyusut */
+  flex-shrink: 0;
 }
 
 .jumbotron img {
   max-width: 100%;
   height: auto;
-  margin: 0; /* Hapus margin tambahan */
+  margin: 0;
 }
 
 .jumbotron .col-12 {
-  display: flex; /* Aktifkan Flexbox untuk elemen teks dan gambar */
-  justify-content: space-between; /* Jarak antara teks dan gambar */
-  align-items: center; /* Tengahkan secara vertikal */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
   .jumbotron .col-12 {
-    flex-direction: column; /* Susun teks dan gambar secara vertikal */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
   .jumbotron .text-section {
-    max-width: 100%; /* Teks mengambil lebar penuh */
-    text-align: center; /* Teks rata tengah */
+    max-width: 100%;
+    text-align: center;
   }
 
   .jumbotron img {
-    margin-top: 1rem; /* Beri jarak antara teks dan gambar */
+    margin-top: 1rem;
+  }
+
+  .card-img-top {
+    height: 150px;
   }
 }
 
@@ -181,14 +185,14 @@ footer a {
   font-weight: bold;
   display: flex;
   align-items: center;
-  gap: 0.5rem; /* Menambahkan jarak antar elemen */
+  gap: 0.5rem;
 }
 
 .animated-info {
   display: inline-block;
   overflow: hidden;
   vertical-align: top;
-  height: 1.2em; /* Tinggi teks untuk menyesuaikan animasi */
+  height: 1.2em;
 }
 
 .animated-item {
@@ -199,10 +203,211 @@ footer a {
 }
 
 .animated-text span.mr-2 {
-  margin-right: 0.5rem; /* Mengatur jarak antara "I'm" dan nama */
+  margin-right: 0.5rem;
 }
 
 .text-highlight {
   color: rgb(43, 255, 255);
   transition: color 0.5s ease, transform 0.5s ease;
+}
+
+/* Download Resume */
+.btn-download {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #000000;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-download:hover {
+  background-color: rgb(43, 255, 255);
+  transform: scale(1.05);
+}
+
+.btn-download:active {
+  transform: scale(1);
+}
+
+/* Modal Styling */
+.custom-modal {
+  display: none;
+  position: fixed;
+  padding: 100px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  margin: 10% auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+h3 {
+  margin-top: 20px;
+}
+
+.modal-content p {
+  margin-top: 1rem;
+}
+
+.modal-links {
+  margin-top: 10px;
+}
+
+.modal-link {
+  display: inline-block;
+  margin: 5px 0;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.modal-link:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+
+/* Card hover effect */
+.card {
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+@keyframes breathe {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Resume Section */
+.resume-container {
+  background-color: #f9f9f9;
+  padding: 2rem;
+}
+
+.resume-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.education,
+.experience {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Timeline Line and Dot */
+.education-item,
+.experience-item {
+  display: flex;
+  gap: 1rem;
+  position: relative;
+}
+
+.line {
+  position: relative;
+  padding: 0 1rem;
+}
+
+.line div {
+  width: 2px;
+  background-color: #ccc;
+  position: relative;
+  height: 100%;
+}
+
+.line div::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-color: #007bff;
+  border-radius: 50%;
+  position: absolute;
+  left: -6px;
+  top: 0;
+  transform: translateY(-50%);
+}
+
+/* Education Content Styling */
+.education-content,
+.experience-item {
+  flex: 1;
+}
+
+.education-content h3,
+.experience-item h3 {
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.education-content .role,
+.experience-item .role {
+  font-weight: bold;
+  color: #555;
+  margin-top: 0.5rem;
+}
+
+.education-content .description,
+.experience-item .description {
+  color: #666;
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.education-content .years,
+.experience-item .years {
+  font-size: 0.85rem;
+  color: #999;
+  margin-top: 0.5rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .resume-grid {
+    grid-template-columns: 1fr;
+  }
 }
